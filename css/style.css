@@ -457,7 +457,7 @@ body{
 	justify-content: center;
 	justify-items: center;
 	margin-top: 2rem;
-	max-height: 700px;
+	max-height: 890px;
 	overflow: hidden;
 	position: relative;
 }
@@ -873,7 +873,7 @@ footer .credit a {
 .close-icon {
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -1030,7 +1030,7 @@ footer .credit a {
 	.menu .row {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		grid-template-rows: repeat(4, auto);
+		grid-template-rows: repeat(2, auto);
 		gap: 1rem;
 		justify-content: space-between;
 		justify-items: center;
@@ -1083,13 +1083,19 @@ footer .credit a {
 	.menu-card .menu-img {
 		aspect-ratio: 1 / 1;
 	}
-	.#modal-all-menu .modal-container {
-		width: 95%;
+	#modal-all-menu .modal-container {
+		width: 90%;
+		max-width: 360px;
+		max-height: 80vh;
 		padding: 1rem;
+		border-radius: 0.8rem;
+		overflow-y: auto;
 		box-sizing: border-box;
+		margin: 5vh auto;
 	}
 	.modal-menu-grid {
 		grid-template-columns: 1fr;
+		gap: 1rem;
 	}
 	.modal-menu-grid .menu-card {
 		width: 100%;
