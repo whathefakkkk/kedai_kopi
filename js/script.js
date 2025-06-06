@@ -294,10 +294,6 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.style.display = 'none';
     }
   });
-
-  window.addEventListener('resize', () => {
-    location.reload(); // reload untuk re-render menu saat ukuran berubah
-  });
 });
 
 
