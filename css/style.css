@@ -570,6 +570,7 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
+  justify-items: center;
 }
 
 .modal-container::-webkit-scrollbar {
@@ -611,7 +612,7 @@ body{
   border-radius: 1rem;
   padding: 2rem;
   width: 95%;
-  max-width: 1200px; /* Lebar maksimum diperbesar */
+  max-width: 800px; /* Lebar maksimum diperbesar */
   max-height: 90vh;   /* Biar tidak full tinggi layar */
   overflow-y: auto;   /* Scroll khusus isi modal */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -1040,6 +1041,19 @@ footer .credit a {
 		position: relative;
 	}
 
+	.menu-card {
+	  width: 180px;
+	}
+	
+	#modal-all-menu .modal-container {
+		max-width: 85%;
+		width: 85%;
+		padding: 1.5rem;
+	}
+	.modal-menu-grid {
+  	grid-template-columns: repeat(2, 1fr);
+	}
+
 	.contact .row {
 		flex-wrap: wrap;
 	}
@@ -1084,8 +1098,8 @@ footer .credit a {
 		aspect-ratio: 1 / 1;
 	}
 	#modal-all-menu .modal-container {
-		width: 90%;
-		max-width: 360px;
+		width: 65%;
+		max-width: 70%;
 		max-height: 80vh;
 		padding: 1rem;
 		border-radius: 0.8rem;
@@ -1098,6 +1112,6 @@ footer .credit a {
 		gap: 1rem;
 	}
 	.modal-menu-grid .menu-card {
-		width: 100%;
+		width: 65%;
 	}
 }
