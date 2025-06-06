@@ -249,7 +249,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const moreBtn = document.querySelector('.more-menu-btn');
   const maxVisible = getMaxVisibleItems();
 
-  if (allCards.length > maxVisible) {
     moreBtn.style.display = 'inline-block';
 
     allCards.forEach((card, index) => {
@@ -272,10 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
 
-  } else {
-    moreBtn.style.display = 'none';
-    allCards.forEach((card) => card.style.display = 'block');
-  }
+
 
   moreBtn.addEventListener('click', () => {
     document.querySelector('#modal-all-menu').style.display = 'block';
