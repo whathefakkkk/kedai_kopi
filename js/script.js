@@ -111,6 +111,7 @@ function renderCart() { //render menu item
 
   cartArea.querySelectorAll('.remove-item').forEach((btn) => {
       btn.addEventListener('click', function() {
+        shoppingCart.classList.remove('active');
         const itemName = this.closest('.cart-items').querySelector('h3').innerText.trim();
         
         Swal.fire({
