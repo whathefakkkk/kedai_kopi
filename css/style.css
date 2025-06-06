@@ -612,7 +612,7 @@ body{
   border-radius: 1rem;
   padding: 2rem;
   width: 95%;
-  max-width: 800px; /* Lebar maksimum diperbesar */
+  max-width: 1200px; /* Lebar maksimum diperbesar */
   max-height: 90vh;   /* Biar tidak full tinggi layar */
   overflow-y: auto;   /* Scroll khusus isi modal */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
