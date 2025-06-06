@@ -1035,7 +1035,7 @@ footer .credit a {
 		justify-content: space-between;
 		justify-items: center;
 		margin-top: 2rem;
-		max-height: 550px;
+		max-height: 860px;
 		overflow: hidden;
 		position: relative;
 	}
@@ -1072,7 +1072,7 @@ footer .credit a {
 		justify-content: space-between;
 		justify-items: center;
 		margin-top: 2rem;
-		max-height: 1200px;
+		max-height: 1180px;
 		overflow: hidden;
 		position: relative;
 	}
