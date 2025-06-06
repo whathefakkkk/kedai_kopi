@@ -334,6 +334,7 @@ function getMaxVisibleItems() {
 
 // tombol order
 orderBtn.addEventListener('click', function () {
+  shoppingCart.classList.remove('active');
   if (Object.keys(cartItems).length === 0) return;
 
   Swal.fire({

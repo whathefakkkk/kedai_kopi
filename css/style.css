@@ -1072,4 +1072,16 @@ footer .credit a {
 		overflow: hidden;
 		position: relative;
 	}
+	.#modal-all-menu .modal-container {
+		width: 95%;
+		padding: 1rem;
+	}
+	.modal-menu-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+	.modal-menu-grid .menu-card {
+		width: 100%;
+		margin: 0 auto;
+	}
 }
