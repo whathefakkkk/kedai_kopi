@@ -4,7 +4,7 @@
 }
 @font-face {
 	font-family: 'Poppins';
-	src: url('../assets/font/Poppins-Regular.ttf') format('truetype');
+	src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
 }
 * {
 	margin: 0;
