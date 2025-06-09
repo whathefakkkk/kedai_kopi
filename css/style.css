@@ -1078,6 +1078,9 @@ footer .credit a {
 	.navbar {
 		position: fixed;
 	}
+	.navbar-logo {
+		font-size: 2rem;
+	}
 	.menu .row {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
