@@ -337,8 +337,8 @@ orderBtn.addEventListener('click', function () {
   Swal.fire({
     title: 'Data Pemesan',
     html:
-      `<input id="swal-input-name" class="swal2-input" placeholder="Nama Pelanggan">` + 
-      `<input id="swal-input-nohp" class="swal2-input" placeholder="No Hp Pelanggan">` +
+      `<input id="swal-input-name" class="swal2-input" placeholder="Nama Pelanggan" autocomplete="off">` + 
+      `<input id="swal-input-nohp" class="swal2-input" placeholder="No Hp Pelanggan" autocomplete="off">` +
       `<textarea id="swal-input-address" class="swal2-textarea" placeholder="Alamat Pengiriman"></textarea>` +
       `<select id="swal-payment-method" class="swal2-select" style="margin-top:10px;">
       <option value="">Pilih Metode Pembayaran</option>
@@ -375,7 +375,7 @@ orderBtn.addEventListener('click', function () {
 
     }
 
-    const pesanWA = `*Pesanan dari Website Kedai Kopi*\n\n*Nama :* ${nama}\n*No Hp :* ${nohp}\n*Alamat :* ${alamat}\n*Pembayaran :* ${method}\n\n${cartSummary.join('\n')}\n\n*Total : IDR ${totalHarga.toLocaleString()}*`;
+    const pesanWA = `*Pesanan dari Website On Point Cafe Sehat*\n\n*Nama :* ${nama}\n*No Hp :* ${nohp}\n*Alamat :* ${alamat}\n*Pembayaran :* ${method}\n\n${cartSummary.join('\n')}\n\n*Total : IDR ${totalHarga.toLocaleString()}*`;
 
     Swal.fire({
       title: 'Konfirmasi Pesanan',
@@ -429,7 +429,7 @@ document.querySelector('#contact-form').addEventListener('submit', function (e) 
   }
 
   const text = `
-    *Pertanyaan dari Website Kedai Kopi*
+    *Pertanyaan dari Website Kedai Kopi*\n
     *Nama :* ${nama}
     *No HP :* ${nohp}
     *Email :* ${email || '-'}
