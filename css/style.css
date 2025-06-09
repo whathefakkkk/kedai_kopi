@@ -1078,7 +1078,7 @@ footer .credit a {
 	.navbar {
 		position: fixed;
 	}
-	.navbar-logo {
+	.navbar .navbar-logo {
 		font-size: 1.5rem;
 	}
 	.menu .row {
