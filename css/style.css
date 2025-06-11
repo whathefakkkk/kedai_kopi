@@ -149,7 +149,7 @@ body{
 	top: 100%;
 	right: -100%;
 	height: 100vh;
-	width: 30%;
+	width: 35%;
 	padding: 0 1.5rem;
 	padding-bottom: 1rem;
 	background-color: #fff;
@@ -956,7 +956,7 @@ footer .credit a {
 	top: 100%;
 	right: -100%;
 	background-color: #fff;
-	width: 20rem;
+	width: 25rem;
 	height: 100vh;
 	transition: 0.5s; 
 	}
@@ -998,7 +998,7 @@ footer .credit a {
 	}
 
 	.navbar .shopping-cart {
-		width: 55%;
+		width: 70%;
 	}
 
 	.about .row {
