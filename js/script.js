@@ -293,8 +293,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-
 document.querySelectorAll('.icon-eye').forEach((eyeIcon) => {
   eyeIcon.addEventListener('click', function () {
     const target = this.dataset.target;
@@ -318,7 +316,6 @@ window.addEventListener('click', function (e) {
   });
 });
 
-
 // item menu
 function getMaxVisibleItems() {
   const width = window.innerWidth;
@@ -326,8 +323,6 @@ function getMaxVisibleItems() {
   if (width >= 768) return 6;    // tablet
   return 4;                      // mobile
 }
-
-
 
 // tombol order
 orderBtn.addEventListener('click', function () {
@@ -375,7 +370,7 @@ orderBtn.addEventListener('click', function () {
 
     }
 
-    const pesanWA = `*Pesanan dari Website On Point Cafe Sehat*\n\n*Nama :* ${nama}\n*No Hp :* ${nohp}\n*Alamat :* ${alamat}\n*Pembayaran :* ${method}\n\n${cartSummary.join('\n')}\n\n*Total : IDR ${totalHarga.toLocaleString()}*`;
+    const pesanWA = `*Pesanan dari Website OnPoint Cafe Sehat*\n\n*Nama :* ${nama}\n*No Hp :* ${nohp}\n*Alamat :* ${alamat}\n*Pembayaran :* ${method}\n\n${cartSummary.join('\n')}\n\n*Total : IDR ${totalHarga.toLocaleString()}*`;
 
     Swal.fire({
       title: 'Konfirmasi Pesanan',
@@ -409,7 +404,6 @@ orderBtn.addEventListener('click', function () {
   });
 });
 
-
 // kontak
 document.querySelector('#contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
@@ -429,14 +423,13 @@ document.querySelector('#contact-form').addEventListener('submit', function (e) 
   }
 
   const text = `
-    *Pertanyaan dari Website Kedai Kopi*\n
+    *Pertanyaan dari Website OnPoint Cafe Sehat*\n
     *Nama :* ${nama}
     *No HP :* ${nohp}
     *Email :* ${email || '-'}
 
     *Pesan :*
     ${pesan}`;
-
 
   const whatsappURL = `https://wa.me/6281352554535?text=${encodeURIComponent(text)}`; // GANTI nomor kamu
 
