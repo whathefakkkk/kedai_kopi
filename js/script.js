@@ -101,7 +101,6 @@ function renderCart() { //render menu item
     cartArea.insertAdjacentHTML("beforeend", itemHTML);
 
   }
-
   // Enable ORDER if ada item
   orderBtn.disabled = totalQty === 0;
   orderBtn.style.opacity = totalQty === 0 ? 0.5 : 1;
@@ -182,7 +181,6 @@ function bindCartEventsToModal() {
 
       updateCartIcon();
       renderCart();
-
       // Toast notifikasi berhasil
       Swal.fire({
         toast: true,
@@ -242,8 +240,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   updateTotals(); // initial run
-
-
   // Script Modal "More Menu"
   const allCards = document.querySelectorAll('.menu-card');
   const modalGrid = document.querySelector('#modal-all-menu .modal-menu-grid');
@@ -271,8 +267,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (modal) modal.style.display = 'block';
       });
     });
-
-
 
   moreBtn.addEventListener('click', () => {
     document.querySelector('#modal-all-menu').style.display = 'block';
@@ -382,8 +376,6 @@ orderBtn.addEventListener('click', function () {
     }).then((result) => {
       if (result.isConfirmed) {
         const waURL = `https://wa.me/6281352554535?text=${encodeURIComponent(pesanWA)}`;
-        window.open(waURL, '_blank');
-
         // reset keranjang
         for (const name in cartItems) {
           delete cartItems[name];
@@ -396,9 +388,22 @@ orderBtn.addEventListener('click', function () {
           position: 'top-end',
           icon: 'success',
           title: 'Pesanan dikirim ke WhatsApp',
-          timer: 2000,
-          showConfirmButton: false
+          timer: 1500,
+          showConfirmButton: false,
+          customClass: {
+            popup:'swal2-toast-custom'
+          },
+          showClass: {
+            popup: 'swal2-animate-slide-in'
+          },
+          hideClass: {
+            popup: 'swal2-animate-slide-out'
+          }
         });
+
+        setTimeout(() => {
+          window.open(waURL, '_blank');
+        }, 1500);
       }
     });
   });
@@ -439,7 +444,16 @@ document.querySelector('#contact-form').addEventListener('submit', function (e) 
     toast: true,
     position: 'top-end',
     timer: 1500,
-    showConfirmButton: false
+    showConfirmButton: false,
+    customClass: {
+      popup:'swal2-toast-custom'
+    },
+    showClass: {
+      popup: 'swal2-animate-slide-in'
+    },
+    hideClass: {
+      popup: 'swal2-animate-slide-out'
+    }
   });
 
   setTimeout(() => {
